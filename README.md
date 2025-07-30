@@ -36,8 +36,7 @@ Il permet aux utilisateurs d’interagir naturellement afin de prendre, modifier
 Installer les dépendances :
 
 - pip install flask openai python-dotenv
-- Lancer le serveur Flask :
-- python app.py
+- Lancer le serveur Flask : python app.py
 
 
 
@@ -57,9 +56,9 @@ Ouvrir votre navigateur sur http://localhost:5000
 
 
 👨‍🎓 Réalisé par
-Bouraoui Akrem
-Nemous Abdelatif
-Kahil amine
+- Bouraoui Akrem
+- Nemous Abdelatif
+- Kahil amine
 
 
 

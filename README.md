@@ -25,17 +25,9 @@ Il permet aux utilisateurs d’interagir naturellement afin de prendre, modifier
 
 🗂️ Structure du projet :
 
-projet_agent_ai/
-│
-├── app.py (serveur Flask)
-├── agent/  Contient class_agent_ai.py
-├── entities/ Classes : client, coiffeur, service, rendezvous, salon
-├── data_manager/ Gestion de fichiers JSON
-├── templates/
-│ └── chat.html Interface utilisateur
-├── static/
-│ └── style.css Fichier de style CSS
-└── .env Clé API OpenAI (non versionnée)
+
+<img width="484" height="244" alt="Capture" src="https://github.com/user-attachments/assets/2fb9b85d-9814-4035-8300-ce5f3be4e0ba" />
+
 
 
 

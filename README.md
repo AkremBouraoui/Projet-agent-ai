@@ -45,7 +45,8 @@ Ouvrir votre navigateur sur http://localhost:5000
 
 
 
-💬 Exemples de messages possibles :
+
+Exemples de messages possibles :
 
 - Bonjour
 - Je veux prendre un rendez-vous

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Salon de la coiffure Boréal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Griffy&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="background"></div>
+
+  <div class="chat-container glass">
+    <h1 class="title">
+      <span class="salon-name">💬 AGENT AI - BARBER 💈</span>
+    </h1>
+
+    <div class="chat-box" id="chat-box">
+      <!-- Messages ici -->
+    </div>
+
+    <form id="chat-form">
+      <input type="text" id="user-input" placeholder="Écrivez votre message ici..." autocomplete="off" required />
+      <button type="submit">Envoyer</button>
+    </form>
+
+    <button id="reset-btn">🔁 Réinitialiser la conversation</button>
+  </div>
+
+  <img src="{{ url_for('static', filename='image/barber_left.gif') }}" class="pole-left">
+  <img src="{{ url_for('static', filename='image/barber_right.gif') }}" class="pole-right">
+
+  <script>
+    const form = document.getElementById('chat-form');
+    const input = document.getElementById('user-input');
+    const chatBox = document.getElementById('chat-box');
+    const resetBtn = document.getElementById('reset-btn');
+
+    function appendMessage(role, text) {
+      const msg = document.createElement('div');
+      msg.className = role === 'user' ? 'user-message' : 'bot-message';
+      msg.innerHTML = `<strong>${role === 'user' ? 'Vous' : 'Agent AI 🤖'} :</strong> ${text}`;
+      chatBox.appendChild(msg);
+      chatBox.scrollTop = chatBox.scrollHeight;
+    }
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const userText = input.value.trim();
+      if (!userText) return;
+      appendMessage('user', userText);
+      input.value = '';
+
+      const typing = document.createElement('div');
+      typing.className = 'bot-message';
+      typing.innerHTML = `<strong>Agent AI ✂️ :</strong> <span class="typing-indicator"><span></span><span></span><span></span></span>`;
+      chatBox.appendChild(typing);
+      chatBox.scrollTop = chatBox.scrollHeight;
+
+      const response = await fetch('/parler', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: userText })
+      });
+
+      const data = await response.json();
+      chatBox.removeChild(typing);
+      appendMessage('bot', data.reponse);
+    });
+
+    resetBtn.addEventListener('click', () => {
+      chatBox.innerHTML = '';
+      appendMessage('bot', "Bonjour ! Comment puis-je vous aider aujourd’hui ?");
+    });
+
+    appendMessage('bot', "Bonjour ! Comment puis-je vous aider aujourd’hui ?");
+  </script>
+</body>
+</html>

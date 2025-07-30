@@ -1,0 +1,22 @@
+[
+  {
+    "id_service": 1,
+    "nom_service": "Coupe de cheveux",
+    "prix": 40
+  },
+  {
+    "id_service": 2,
+    "nom_service": "Brushing",
+    "prix": 25
+  },
+  {
+    "id_service": 3,
+    "nom_service": "Coloration",
+    "prix": 45
+  },
+  {
+    "id_service": 2,
+    "nom_service": "Nettoyage de peaux",
+    "prix": 50
+  }
+]

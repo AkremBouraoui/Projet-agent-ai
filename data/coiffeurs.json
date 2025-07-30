@@ -1,0 +1,42 @@
+[
+  {
+    "id_coiffeur": 1,
+    "nom": "Akram",
+    "specialite": "Coupe de cheveux"
+  },
+  {
+    "id_coiffeur": 2,
+    "nom": "Natalia",
+    "specialite": "Coupe de cheveux"
+  },
+  {
+    "id_coiffeur": 3,
+    "nom": "Abdelatif",
+    "specialite": "Brushing"
+  },
+  {
+    "id_coiffeur": 4,
+    "nom": "Sarah",
+    "specialite": "Brushing"
+  },
+  {
+    "id_coiffeur": 5,
+    "nom": "Amine",
+    "specialite": "Coloration"
+  },
+  {
+    "id_coiffeur": 6,
+    "nom": "Lina",
+    "specialite": "Coloration"
+  },
+  {
+    "id_coiffeur": 7,
+    "nom": "Yazen",
+    "specialite": "Nettoyage de peaux"
+  },
+  {
+    "id_coiffeur": 8,
+    "nom": "Mazen",
+    "specialite": "Nettoyage de peaux"
+  }
+]

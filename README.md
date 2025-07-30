@@ -6,10 +6,10 @@ Il permet aux utilisateurs d’interagir naturellement afin de prendre, modifier
 
 🎯 Objectifs du projet :
 
-- Créer un système intelligent de prise de rendez-vous
-- Simuler une vraie conversation avec un agent AI
-- Proposer une interface web intuitive (HTML/CSS)
-- Organiser le code autour d’entités (classes), d’un gestionnaire de données et d’un agent
+- Créer un système intelligent de prise de rendez-vous.
+- Simuler une vraie conversation avec un agent AI.
+- Proposer une interface web intuitive (HTML/CSS).
+- Organiser le code autour d’entités (classes), d’un gestionnaire de données et d’un agent.
 
 
 🧠 Fonctionnalités principales :

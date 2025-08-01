@@ -1,5 +1,7 @@
 <img width="809" height="452" alt="1" src="https://github.com/user-attachments/assets/9d366a3e-8361-4c3a-ab9b-1553729ea314" />
 
+
+
 1- Agent AI – Salon de Coiffure Intelligent :
 
 Notre projet consiste à développer un agent intelligent capable de communiquer avec les utilisateurs pour gérer les services d’un salon de coiffure.
@@ -8,6 +10,8 @@ Cet agent est accessible via une interface web moderne et permet :
 - La consultation des services et des coiffeurs
 - La gestion des données (ajout, modification, suppression)
 
+
+
 2- Objectifs du projet :
 
 - Automatiser la communication avec les clients
@@ -15,14 +19,21 @@ Cet agent est accessible via une interface web moderne et permet :
 - Offrir une expérience interactive grâce à un Agent AI
 - Gérer dynamiquement les entités du salon : clients, coiffeurs, services, etc.
 
+
+
 3- Structure du projet :
 
 <img width="425" height="553" alt="2" src="https://github.com/user-attachments/assets/41f000c2-901e-403e-b647-c855242cf211" />
 
 
+
+
+
 4- Diagramme de classes UML :
 
 <img width="1018" height="893" alt="image" src="https://github.com/user-attachments/assets/8dbfd014-afda-4618-96c9-fc77581bef53" />
+
+
 
 Ce diagramme représente la structure orientée objet de notre application « Agent AI ». Il permet de visualiser les entités principales du système, leurs attributs, leurs méthodes, ainsi que les relations entre elles.
 
@@ -80,6 +91,10 @@ Les relations :
 - Le Salon gère plusieurs clients, coiffeurs, services et rendez-vous.
 - Un RendezVous relie un Client, un Coiffeur et un Service.
 
+
+
+
+
 5-Fonctionnement de l’Agent AI :
 
 - L’agent intelligent agit comme un assistant virtuel pour le salon de coiffure.
@@ -89,6 +104,10 @@ Une fois toutes les informations collectées, il crée un client et enregistre u
 En cas de message général (sans mots-clés), il utilise l’API OpenAI pour répondre de manière naturelle et contextuelle.
 Cela permet une interaction fluide, intelligente et personnalisée avec chaque utilisateur.
 
+
+
+
+
 6- Technologies utilisées :
 
 - Python (Flask) pour le backend
@@ -96,6 +115,9 @@ Cela permet une interaction fluide, intelligente et personnalisée avec chaque u
 - GitHub pour la gestion de version
 - JSON pour la persistance des données
 - VS Code comme environnement de développement 
+
+
+
 
 7- Données JSON :
 
@@ -106,6 +128,9 @@ Toutes les données sont sauvegardées en local dans des fichiers :
 - rendezvous.json
 Aucune base de données externe n’est utilisée (stockage en mémoire locale).
 
+
+
+
 8- Code source :
 
 Les technologies utilisées :
@@ -114,6 +139,10 @@ Les technologies utilisées :
 - JSON (données)
 - OpenAI API (optionnel) 
 - GitHub (versioning)
+
+
+
+
 
 9- Conclusion :
 

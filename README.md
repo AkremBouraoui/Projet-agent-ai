@@ -155,6 +155,9 @@ Les technologies utilisées :
 
 Accéder à l’interface : Ouvrir votre navigateur sur http://127.0.0.1:5000
 
+<img width="1366" height="697" alt="Capture" src="https://github.com/user-attachments/assets/05bcdd42-3fc2-407b-a08f-64129d8d6fe2" />
+
+
 
 
 
